@@ -12,14 +12,14 @@
 
 body {
 	--g-colorSchemeName: darkMode;
-	--color-text-default: var(--pdt-l1);
-	--color-text-subtle: var(--pdt-l2);
+	--sema-color-text-default: var(--pdt-l1);
+	--sema-color-text-subtle: var(--pdt-l2);
 	--color-icon-subtle: var(--pdt-l2);
-	--color-icon-default: var(--pdt-l3);
-	--color-background-default: var(--pdt-d1);
+	--sema-color-icon-default: var(--pdt-l3);
+	--sema-color-background-default: var(--pdt-d1);
 	--color-background-box-default: var(--pdt-d1);
-	--color-background-button-secondary-default: var(--pdt-d3);
-	--color-background-button-secondary-hover: var(--pdt-d4);
+	--comp-button-color-background-secondary-default: var(--pdt-d3);
+	--comp-button-color-hover-background-secondary-default: var(--pdt-d4);
 	--color-background-tabs-default-base: var(--pdt-d1);
 	--color-background-tabs-default-hover: var(--pdt-d3);
 	--color-background-tabs-default-active: var(--pdt-d4);
@@ -255,6 +255,12 @@ div[data-test-id="chat-window-container"] {
 */
 .DUt.Jea.KS5.mQ8.zI7.iyn.Hsu {
 	filter: invert(1);
+}
+
+
+/* --Quick fix 22/11/25-- */
+div:has(> div[data-root-margin="more-ideas-tabs"]){
+	background-color: var(--pdt-d1) !important;
 }
 
 /* --Quick fix 7/11/25-- */
